@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/StyliticsData-Swift.h</key>
 		<data>
-		FIQk5DDPqjRC+rwF7afFQvRHo4U=
+		Mv5VIeDur+xi087SL0q8Xxesumk=
 		</data>
 		<key>Headers/StyliticsData.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Hqik3I11maCMvMy4RN6ogVbhwNM=
+		4IHeh+kkcQYQOh/NDBxN2bSOusE=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		iSIW2Ur9rVi0cCZdM3d3HleRSqk=
+		qE4IvTS1b1trj4AFHO82yzrVIlg=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jpM1JT1SaVIfNzh+dQFygw36LOI=
+		APLDVt+9l8BJg1plDBmNjnodXmk=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		VS9ey/Z1AP6W48dfcf+yBhw1wQ8=
+		3sXI8NTubIjtouEsoRPyfo+QVuI=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jpM1JT1SaVIfNzh+dQFygw36LOI=
+		APLDVt+9l8BJg1plDBmNjnodXmk=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n+vVKIE5o4BUgO/70exem4+gpLM=
+		IPRsBfREte1DdTHo/K123h62LZg=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		iSIW2Ur9rVi0cCZdM3d3HleRSqk=
+		qE4IvTS1b1trj4AFHO82yzrVIlg=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cZc8Ti0cc/T19NxsJEFPKTjaQ8Y=
+		8e6oLHifFy/KUXu6fIBaVrCdTEI=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gGAMSzBEt8rqxX6SYo21JAoCJ6s=
+		4HWggfkV8e3Vd1hBpl+wMIV6x3c=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cZc8Ti0cc/T19NxsJEFPKTjaQ8Y=
+		8e6oLHifFy/KUXu6fIBaVrCdTEI=
 		</data>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2C1vlwIZUnSJ7nc3Y/qsZU55INk=
+		haPZUB373iTBavcGCuK+und5T+8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W6dBjxtYAGcGb8oQSKC6N4QCzMxy8k2tMt7FNPqcO+k=
+			szv9lKzCe6jbPY8T35sMxYqsw/CcPuH+eUOwkvSGQ6s=
 			</data>
 		</dict>
 		<key>Headers/StyliticsData.h</key>
@@ -104,70 +104,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tsy5RKJ8SvKywOHt5jVfRg3+ERTHp65ngUo+uJc9avM=
+			U5mhGSX/ZoI3nQyVxQLJCilat7zlgyCc/JjqqrweOkE=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PEVAcfelbrvyZ4LyJulz3qrOI6KsuWAzeFtbtfeSY7s=
+			81cgwd4zMcUx+rWf+mYqeq5z8j5eaKGPaVU2jPHVDi4=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gEGVaW2dOIlSoWWhds95jvZZV1dMgtpfJX2icS2yG6k=
+			ekKMCV6GpcEUxlOIfwdHjgKnJrseeHeZ7lH7MSkIdIU=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PEVAcfelbrvyZ4LyJulz3qrOI6KsuWAzeFtbtfeSY7s=
+			81cgwd4zMcUx+rWf+mYqeq5z8j5eaKGPaVU2jPHVDi4=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PEOY29lZQyu/wjP+7DFnr9k805CJ/uHKVriylYU1b5w=
+			xQnCbjVGDYp65z0pGBeTBupPvY9++iIR6mGy/e6oB5E=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tsy5RKJ8SvKywOHt5jVfRg3+ERTHp65ngUo+uJc9avM=
+			U5mhGSX/ZoI3nQyVxQLJCilat7zlgyCc/JjqqrweOkE=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nlPurNw8StLnAVKR4hW55J+E19hQtYcj9FwpjECjm2E=
+			T0DKQ09A1FZhl3LqriGBNeeiVC8Dt550frZYYMAgcXM=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ItUylvHR+H4mp1GrnyVZnqXBkhFiN4jzq22c8R+7CjY=
+			BJlGL59cvXbIP6pS3q6N5x4GcxJhjyUYVNL6yOV5tDo=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nlPurNw8StLnAVKR4hW55J+E19hQtYcj9FwpjECjm2E=
+			T0DKQ09A1FZhl3LqriGBNeeiVC8Dt550frZYYMAgcXM=
 			</data>
 		</dict>
 		<key>Modules/StyliticsData.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BjJAGJh7wSa8vVzg+XBckmWpvkR42fb+Vk+KwWKSKxE=
+			E1q+zbPRSeILPXo2WeFeIAbrJMetQm9WWnT7IkhLDsU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
