@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name StyliticsData
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name StyliticsData
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CryptoKit
 import Foundation
 import SQLite3
@@ -40,13 +40,21 @@ extension StyliticsData.CollageDimensions : Swift.Decodable {
     case outfitWidth
     case imageHeight
     case imageWidth
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(stringValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(intValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
+    #endif
     public var rawValue: Swift.String {
       get
     }
@@ -85,7 +93,9 @@ public struct ReplacementsResponse {
   public let response: Foundation.URLResponse?
   public let data: StyliticsData.ReplacementsResponse.ResponseType?
   public let error: (any Swift.Error)?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(response: Foundation.URLResponse?, data: StyliticsData.ReplacementsResponse.ResponseType?, error: (any Swift.Error)?)
+  #endif
 }
 public struct UpsellsResponse {
   public typealias ResponseType = StyliticsData.UpsellItems
@@ -93,7 +103,9 @@ public struct UpsellsResponse {
   public var data: StyliticsData.UpsellsResponse.ResponseType?
   public let error: (any Swift.Error)?
   public func isResponseEmpty() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(response: Foundation.URLResponse?, data: StyliticsData.UpsellsResponse.ResponseType? = nil, error: (any Swift.Error)?)
+  #endif
 }
 public struct OutfitLandingPage : StyliticsData.IStyliticsData {
   public var outfitBundle: StyliticsData.OutfitBundle?
@@ -120,7 +132,9 @@ final public class StyliticsConfig {
   final public var locale: Swift.String?
   final public let clientName: Swift.String
   final public var customerProfileId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(timeoutInSecs: Swift.Double? = nil, enableDebugLogs: Swift.Bool? = nil, dataApisHost: StyliticsData.DataApisHost? = nil, trackingApisHost: StyliticsData.TrackingApisHost? = nil, locale: Swift.String? = nil, clientName: Swift.String, customerProfileId: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 public struct PurchasedItem {
@@ -132,13 +146,19 @@ extension StyliticsData.PurchasedItem : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension Swift.Dictionary {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func merge(_ dict: [Key : Value]?) -> [Key : Value]
+  #endif
 }
 extension StyliticsData.OutfitBundle {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var pageURL: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getAnchorItem() -> StyliticsData.OutfitBundleItem?
+  #endif
 }
 public struct OutfitsResponse {
   public typealias ResponseType = StyliticsData.Outfits
@@ -197,13 +217,19 @@ extension StyliticsData.ShopTheSetItem : Swift.Decodable {
   @objc deinit
 }
 extension StyliticsData.ExperienceConfigManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var labelStyle: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func syfyFullPageModules() -> [StyliticsData.SYFYFullPageModule]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var variantWidget: Swift.String? {
     get
   }
+  #endif
 }
 public struct GalleryBundles : StyliticsData.IStyliticsData {
   public var list: [StyliticsData.OutfitBundle]
@@ -215,7 +241,9 @@ public enum ContextType : Swift.String {
   case purchased
   case browsed
   case item
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -251,14 +279,18 @@ public struct StyledForYouResponse {
   public var data: StyliticsData.StyledForYouResponse.ResponseType?
   public let error: (any Swift.Error)?
   public func isResponseEmpty() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(response: Foundation.URLResponse?, data: StyliticsData.StyledForYouResponse.ResponseType? = nil, error: (any Swift.Error)?)
+  #endif
 }
 public struct Outfits : StyliticsData.IStyliticsData {
   public var list: [StyliticsData.OutfitBundle]
   public let localizationVersion: Swift.String?
   public var isMixAndMatchEnabled: Swift.Bool
   public var accountId: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(list: [StyliticsData.OutfitBundle], localizationVersion: Swift.String?, isMixAndMatchEnabled: Swift.Bool, accountId: Swift.Int? = nil)
+  #endif
 }
 extension StyliticsData.Outfits : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
@@ -273,7 +305,9 @@ public enum Event : Swift.String, Swift.CaseIterable {
   case addToCart
   case seeMoreExpand
   case seeMoreCollapse
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [StyliticsData.Event]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [StyliticsData.Event] {
@@ -293,7 +327,9 @@ public enum UIComponent : Swift.String {
   case productList
   case miniModal
   case bundleCta
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -302,7 +338,9 @@ public enum UIComponent : Swift.String {
 public enum ShopTheSetEventType : Swift.String {
   case set
   case item
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -323,7 +361,9 @@ public enum TrackingInfoKey : Swift.String {
   case uiComponent
   case outfit
   case outfitBundle
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -340,7 +380,9 @@ public enum TrackingWidgetType : Swift.String {
   case trendingBundles
   case upsells
   case styledForYouFullPage
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -349,7 +391,9 @@ public enum TrackingWidgetType : Swift.String {
 public struct StyledForYou : StyliticsData.IStyliticsData {
   public var purchased: StyliticsData.StyledForYouContext?
   public var browsed: StyliticsData.StyledForYouContext?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(purchased: StyliticsData.StyledForYouContext? = nil, browsed: StyliticsData.StyledForYouContext? = nil)
+  #endif
 }
 extension StyliticsData.StyledForYou : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
@@ -359,7 +403,9 @@ public struct BundleContext {
   public let contextType: StyliticsData.ContextType
   public let pairingMessage: Swift.String?
   public let productName: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(imageUrl: Swift.String?, contextType: StyliticsData.ContextType, pairingMessage: Swift.String?, productName: Swift.String?)
+  #endif
 }
 public struct ShopTheSetItemsInfo {
   public let topItem: StyliticsData.ShopTheSetItem
@@ -368,9 +414,11 @@ public struct ShopTheSetItemsInfo {
   public let bottomItemPosition: Swift.Int
   public let actionItemPosition: StyliticsData.ShopTheSetActionItemPosition
   public init(topItem: StyliticsData.ShopTheSetItem, topItemPosition: Swift.Int, bottomItem: StyliticsData.ShopTheSetItem, bottomItemPosition: Swift.Int, actionItemPosition: StyliticsData.ShopTheSetActionItemPosition)
+  #if compiler(>=5.3) && $NonescapableTypes
   public var collectionIds: [Swift.Int]? {
     get
   }
+  #endif
 }
 public struct ReplacementItems : StyliticsData.IStyliticsData {
   public let items: [Swift.String : [StyliticsData.OutfitBundleItem]]
@@ -389,10 +437,18 @@ extension StyliticsData.ReplacementItems : Swift.Decodable {
   public static func shopTheSet(filterInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.ShopTheSetResponse) -> Swift.Void) throws
   public static func outfitLandingPage(outfitId: Swift.Int, filterInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.OutfitLandingPageResponse) -> Swift.Void) throws
   public static func configure(config: StyliticsData.StyliticsConfig) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func engagement(trackingInfo: StyliticsData.EngagementsTrackingInfo, response: ((StyliticsData.EngagementsResponse) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func purchases(purchasedItems: StyliticsData.PurchasedItems, response: ((StyliticsData.PurchasesResponse) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func updateGlobalLocale(_ locale: Swift.String?) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func updateCustomerProfileId(_ customerProfileId: Swift.String?) throws
+  #endif
   public static func doNotTrack(_ doNotTrack: Swift.Bool)
   public static func outfitsCountDisplayedByUxSdk(outfits: StyliticsData.Outfits, outfitTemplate: StyliticsData.OutfitTemplate) -> Swift.Int
   @objc deinit
@@ -411,12 +467,18 @@ extension StyliticsData.ShopTheSet : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct PurchasedItems {
-  public init(currency: Swift.String, orderId: Swift.String? = nil, itemInfoList: [StyliticsData.PurchasedItemInfo])
+  public init(currency: Swift.String, orderId: Swift.String, itemInfoList: [StyliticsData.PurchasedItemInfo], orderTotal: Swift.Double, locale: Swift.String) throws
 }
 public struct PurchasedItemInfo {
-  public init?(remoteId: Swift.String?, itemId: Swift.String?, price: Swift.Double?)
-  public init?(remoteId: Swift.String?, itemId: Swift.String?, price: Swift.Int?)
-  public init?(remoteId: Swift.String?, itemId: Swift.Int?, price: Swift.Double?)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(remoteId: Swift.String?, itemId: Swift.String?, price: Swift.Double?, quantity: Swift.Int?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(remoteId: Swift.String?, itemId: Swift.String?, price: Swift.Int?, quantity: Swift.Int?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(remoteId: Swift.String?, itemId: Swift.Int?, price: Swift.Double?, quantity: Swift.Int?)
+  #endif
 }
 public struct OutfitBundleItem {
   public let promotions: [Swift.String]?
@@ -502,7 +564,9 @@ public enum EngagementInfo {
   case styledForYouFullPageData(requestId: Swift.String, position: Swift.Int)
 }
 public struct EngagementsTrackingInfo {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(event: StyliticsData.Event, engagementInfo: StyliticsData.EngagementInfo, extraInfo: [Swift.String : Any]? = nil)
+  #endif
 }
 public struct StyledForYouContext {
   public var requested: [StyliticsData.StyledForYouContextItem]
@@ -546,7 +610,9 @@ public enum SYFYFullPageModule : Swift.String {
   case syfy
   case trendingBundles
   case upsells
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -565,7 +631,9 @@ public struct TrendingBundlesResponse {
   public var data: StyliticsData.TrendingBundlesResponse.ResponseType?
   public let error: (any Swift.Error)?
   public func isResponseEmpty() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(response: Foundation.URLResponse?, data: StyliticsData.TrendingBundlesResponse.ResponseType? = nil, error: (any Swift.Error)?)
+  #endif
 }
 public struct OutfitBundle {
   public let personalization: StyliticsData.Personalization?

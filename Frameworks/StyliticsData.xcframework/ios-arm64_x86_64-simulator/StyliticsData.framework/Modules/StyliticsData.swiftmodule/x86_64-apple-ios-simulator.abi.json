@@ -1658,6 +1658,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -9127,6 +9134,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -15603,7 +15617,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(currency:orderId:itemInfoList:)",
+            "printedName": "init(currency:orderId:itemInfoList:orderTotal:locale:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15619,18 +15633,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -15645,15 +15650,28 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13StyliticsData14PurchasedItemsV8currency7orderId12itemInfoListACSS_SSSgSayAA0c4ItemI0VGtcfc",
-            "mangledName": "$s13StyliticsData14PurchasedItemsV8currency7orderId12itemInfoListACSS_SSSgSayAA0c4ItemI0VGtcfc",
+            "usr": "s:13StyliticsData14PurchasedItemsV8currency7orderId12itemInfoList0F5Total6localeACSS_SSSayAA0c4ItemI0VGSdSStKcfc",
+            "mangledName": "$s13StyliticsData14PurchasedItemsV8currency7orderId12itemInfoList0F5Total6localeACSS_SSSayAA0c4ItemI0VGSdSStKcfc",
             "moduleName": "StyliticsData",
             "declAttributes": [
               "AccessControl"
             ],
+            "throwing": true,
             "init_kind": "Designated"
           }
         ],
@@ -15690,7 +15708,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(remoteId:itemId:price:)",
+            "printedName": "init(remoteId:itemId:price:quantity:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15747,11 +15765,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_AHSdSgtcfc",
-            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_AHSdSgtcfc",
+            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_AISdSgSiSgtcfc",
+            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_AISdSgSiSgtcfc",
             "moduleName": "StyliticsData",
             "declAttributes": [
               "AccessControl"
@@ -15761,7 +15793,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(remoteId:itemId:price:)",
+            "printedName": "init(remoteId:itemId:price:quantity:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15818,11 +15850,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_AHSiSgtcfc",
-            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_AHSiSgtcfc",
+            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_AISiSgAJtcfc",
+            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_AISiSgAJtcfc",
             "moduleName": "StyliticsData",
             "declAttributes": [
               "AccessControl"
@@ -15832,7 +15878,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(remoteId:itemId:price:)",
+            "printedName": "init(remoteId:itemId:price:quantity:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15889,11 +15935,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_SiSgSdSgtcfc",
-            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_SiSgSdSgtcfc",
+            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_SiSgSdSgAJtcfc",
+            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_SiSgSdSgAJtcfc",
             "moduleName": "StyliticsData",
             "declAttributes": [
               "AccessControl"
@@ -25599,6 +25659,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -25633,1855 +25700,1855 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
       "kind": "StringLiteral",
       "offset": 519,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
       "kind": "StringLiteral",
       "offset": 742,
       "length": 16,
       "value": "\"base_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
       "kind": "StringLiteral",
       "offset": 842,
       "length": 12,
       "value": "\"sale_price\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
       "kind": "StringLiteral",
       "offset": 885,
       "length": 17,
       "value": "\"price_localized\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
       "kind": "StringLiteral",
       "offset": 937,
       "length": 22,
       "value": "\"sale_price_localized\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
       "kind": "StringLiteral",
       "offset": 987,
       "length": 14,
       "value": "\"purchased_at\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYou\/StyledForYouContextItem.swift",
       "kind": "StringLiteral",
       "offset": 1026,
       "length": 11,
       "value": "\"remote_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Replacements\/CollageDimensions.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Replacements\/CollageDimensions.swift",
       "kind": "StringLiteral",
       "offset": 567,
       "length": 15,
       "value": "\"outfit_height\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Replacements\/CollageDimensions.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Replacements\/CollageDimensions.swift",
       "kind": "StringLiteral",
       "offset": 610,
       "length": 14,
       "value": "\"outfit_width\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Replacements\/CollageDimensions.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Replacements\/CollageDimensions.swift",
       "kind": "StringLiteral",
       "offset": 652,
       "length": 14,
       "value": "\"image_height\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Replacements\/CollageDimensions.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Replacements\/CollageDimensions.swift",
       "kind": "StringLiteral",
       "offset": 693,
       "length": 13,
       "value": "\"image_width\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/NetworkLayer\/HttpMethod.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/NetworkLayer\/HttpMethod.swift",
       "kind": "StringLiteral",
       "offset": 168,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/NetworkLayer\/HttpMethod.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/NetworkLayer\/HttpMethod.swift",
       "kind": "StringLiteral",
       "offset": 190,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Coords.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Coords.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 3,
       "value": "\"x\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Coords.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Coords.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 3,
       "value": "\"y\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Coords.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Coords.swift",
       "kind": "StringLiteral",
       "offset": 418,
       "length": 3,
       "value": "\"z\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/BrowsedItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/BrowsedItem.swift",
       "kind": "StringLiteral",
       "offset": 384,
       "length": 17,
       "value": "\"pairing_message\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/OutfitLandingPage\/OutfitLandingPage.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/OutfitLandingPage\/OutfitLandingPage.swift",
       "kind": "StringLiteral",
       "offset": 484,
       "length": 8,
       "value": "\"outfit\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/OutfitLandingPage\/OutfitLandingPage.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/OutfitLandingPage\/OutfitLandingPage.swift",
       "kind": "StringLiteral",
       "offset": 526,
       "length": 7,
       "value": "\"items\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/OutfitLandingPage\/OutfitLandingPage.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/OutfitLandingPage\/OutfitLandingPage.swift",
       "kind": "StringLiteral",
       "offset": 564,
       "length": 17,
       "value": "\"similar_outfits\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/DataStorage\/SQLite\/SQLiteDB.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/DataStorage\/SQLite\/SQLiteDB.swift",
       "kind": "IntegerLiteral",
       "offset": 232,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/OutfitReqResTrackingInfo.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/OutfitReqResTrackingInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 406,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/PurchasedItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/PurchasedItem.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 17,
       "value": "\"pairing_message\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/ExtensionUtility.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/ExtensionUtility.swift",
       "kind": "StringLiteral",
       "offset": 6062,
       "length": 41,
       "value": "\"com.stylitics.RefreshWidgetNotification\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/ExtensionUtility.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/ExtensionUtility.swift",
       "kind": "StringLiteral",
       "offset": 6161,
       "length": 36,
       "value": "\"com.stylitics.DeviceMetricsDetails\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/DeviceMetrics\/DeviceMetricsManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/DeviceMetrics\/DeviceMetricsManager.swift",
       "kind": "Dictionary",
       "offset": 305,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Logger\/Logger.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Logger\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 337,
       "length": 37,
       "value": "\"com.styliticsData.LoggerSerialQueue\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 1520,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 1721,
       "length": 20,
       "value": "\"lookbook_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 1830,
       "length": 11,
       "value": "\"color_hex\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 1871,
       "length": 17,
       "value": "\"large_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 1923,
       "length": 23,
       "value": "\"other_client_item_ids\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 1976,
       "length": 17,
       "value": "\"small_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2043,
       "length": 17,
       "value": "\"price_localized\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2086,
       "length": 12,
       "value": "\"account_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2124,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2159,
       "length": 9,
       "value": "\"item_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2204,
       "length": 23,
       "value": "\"transparent_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2275,
       "length": 16,
       "value": "\"affiliate_link\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2346,
       "length": 19,
       "value": "\"retailer_category\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2394,
       "length": 16,
       "value": "\"base_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2435,
       "length": 11,
       "value": "\"image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2509,
       "length": 11,
       "value": "\"remote_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2584,
       "length": 12,
       "value": "\"sale_price\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2622,
       "length": 12,
       "value": "\"color_rgbs\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2664,
       "length": 16,
       "value": "\"retailer_style\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2719,
       "length": 27,
       "value": "\"client_original_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2778,
       "length": 18,
       "value": "\"account_username\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2853,
       "length": 22,
       "value": "\"sale_price_localized\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSetItem.swift",
       "kind": "StringLiteral",
       "offset": 2943,
       "length": 16,
       "value": "\"retailer_color\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "Dictionary",
       "offset": 312,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 356,
       "length": 47,
       "value": "\"exp.\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 1,
       "value": "\".mix-and-match\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 443,
       "length": 45,
       "value": "\"exp.\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 475,
       "length": 1,
       "value": "\".label-style\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 535,
       "length": 53,
       "value": "\"exp.\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 567,
       "length": 1,
       "value": "\".label-presence-test\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 639,
       "length": 77,
       "value": "\"exp.\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 671,
       "length": 1,
       "value": "\".widget-variant-styled-for-you-full-page-ios\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 759,
       "length": 52,
       "value": "\"exp.\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 791,
       "length": 1,
       "value": "\".widget-variant-ios\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "IntegerLiteral",
       "offset": 862,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "IntegerLiteral",
       "offset": 919,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "IntegerLiteral",
       "offset": 960,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Config\/ExperienceConfigManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1005,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/GalleryBundles.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/GalleryBundles.swift",
       "kind": "StringLiteral",
       "offset": 397,
       "length": 9,
       "value": "\"bundles\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYouFullPage\/TrendingBundles.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYouFullPage\/TrendingBundles.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 18,
       "value": "\"trending-bundles\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/RequestIdGenerator.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/RequestIdGenerator.swift",
       "kind": "Array",
       "offset": 202,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Outfits.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Outfits.swift",
       "kind": "BooleanLiteral",
       "offset": 316,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Outfits.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Outfits.swift",
       "kind": "StringLiteral",
       "offset": 864,
       "length": 9,
       "value": "\"outfits\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Outfits.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Outfits.swift",
       "kind": "StringLiteral",
       "offset": 909,
       "length": 22,
       "value": "\"localization_version\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Outfits.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Outfits\/Outfits.swift",
       "kind": "StringLiteral",
       "offset": 957,
       "length": 12,
       "value": "\"account_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 339,
       "length": 13,
       "value": "\"add-to-cart\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 378,
       "length": 25,
       "value": "\"expand-see-more-options\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 27,
       "value": "\"collapse-see-more-options\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2021,
       "length": 16,
       "value": "\"outfits-widget\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2061,
       "length": 14,
       "value": "\"mnm-embedded\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2096,
       "length": 11,
       "value": "\"mnm-modal\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2135,
       "length": 19,
       "value": "\"closet-essentials\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2180,
       "length": 16,
       "value": "\"featured-shops\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2218,
       "length": 12,
       "value": "\"V3-classic\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2258,
       "length": 20,
       "value": "\"V3-main-and-detail\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2300,
       "length": 12,
       "value": "\"V3-gallery\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2331,
       "length": 9,
       "value": "\"V3-nike\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2364,
       "length": 14,
       "value": "\"V3-moodboard\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2404,
       "length": 17,
       "value": "\"V3-nike-gallery\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2443,
       "length": 13,
       "value": "\"V3-hotspots\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2475,
       "length": 14,
       "value": "\"data-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2509,
       "length": 17,
       "value": "\"classic-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2546,
       "length": 18,
       "value": "\"hotspots-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2593,
       "length": 27,
       "value": "\"dynamic-galleries-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2637,
       "length": 14,
       "value": "\"nike-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2676,
       "length": 14,
       "value": "\"syfy-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2713,
       "length": 22,
       "value": "\"shop-the-set-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2765,
       "length": 29,
       "value": "\"outfit-landing-page-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2811,
       "length": 14,
       "value": "\"grid-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2853,
       "length": 26,
       "value": "\"trending-outfits-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2899,
       "length": 17,
       "value": "\"upsells-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 2949,
       "length": 24,
       "value": "\"syfy-full-page-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3093,
       "length": 10,
       "value": "\"hot-spot\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3124,
       "length": 11,
       "value": "\"item-list\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3159,
       "length": 15,
       "value": "\"item-list-cta\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3200,
       "length": 17,
       "value": "\"modal-item-list\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3238,
       "length": 11,
       "value": "\"item-tile\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3269,
       "length": 9,
       "value": "\"collage\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3302,
       "length": 14,
       "value": "\"product-list\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3338,
       "length": 12,
       "value": "\"mini-modal\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3372,
       "length": 12,
       "value": "\"bundle-cta\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 3530,
       "length": 23,
       "value": "\"client_original_image\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 4936,
       "length": 13,
       "value": "\"widget_type\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 4969,
       "length": 10,
       "value": "\"page_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5003,
       "length": 14,
       "value": "\"ui_component\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5058,
       "length": 15,
       "value": "\"outfit_bundle\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5140,
       "length": 22,
       "value": "\"shop-the-set-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5187,
       "length": 14,
       "value": "\"syfy-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5221,
       "length": 17,
       "value": "\"classic-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5258,
       "length": 18,
       "value": "\"hotspots-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5305,
       "length": 27,
       "value": "\"dynamic-galleries-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5362,
       "length": 29,
       "value": "\"outfit-landing-page-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5408,
       "length": 14,
       "value": "\"grid-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5450,
       "length": 26,
       "value": "\"trending-outfits-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5496,
       "length": 17,
       "value": "\"upsells-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/EngagementTrackingEnums.swift",
       "kind": "StringLiteral",
       "offset": 5546,
       "length": 24,
       "value": "\"syfy-full-page-ios-sdk\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/StyliticsDataApis.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/StyliticsDataApis.swift",
       "kind": "BooleanLiteral",
       "offset": 775,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/DataStorage\/SQLite\/SQLiteManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/DataStorage\/SQLite\/SQLiteManager.swift",
       "kind": "StringLiteral",
       "offset": 253,
       "length": 23,
       "value": "\"PreviouslyBrowsedData\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/DataStorage\/SQLite\/SQLiteManager.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/DataStorage\/SQLite\/SQLiteManager.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 25,
       "value": "\"PreviouslyPurchasedData\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSet.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSet.swift",
       "kind": "StringLiteral",
       "offset": 392,
       "length": 12,
       "value": "\"account_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSet.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/ShopTheSet\/ShopTheSet.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 11,
       "value": "\"item_sets\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/CrashLogger\/StyliticsCrashLogger.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/CrashLogger\/StyliticsCrashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/CrashLogger\/StyliticsCrashLogger.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/CrashLogger\/StyliticsCrashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 313,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 531,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2003,
       "length": 23,
       "value": "\"other_client_item_ids\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2057,
       "length": 17,
       "value": "\"price_localized\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2104,
       "length": 16,
       "value": "\"affiliate_link\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2167,
       "length": 12,
       "value": "\"sale_price\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2211,
       "length": 18,
       "value": "\"account_username\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2264,
       "length": 22,
       "value": "\"sale_price_localized\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2334,
       "length": 16,
       "value": "\"base_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2373,
       "length": 9,
       "value": "\"item_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2425,
       "length": 11,
       "value": "\"remote_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2461,
       "length": 11,
       "value": "\"color_hex\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2505,
       "length": 20,
       "value": "\"lookbook_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2619,
       "length": 17,
       "value": "\"large_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2666,
       "length": 17,
       "value": "\"small_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2728,
       "length": 12,
       "value": "\"account_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2766,
       "length": 12,
       "value": "\"product_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2814,
       "length": 23,
       "value": "\"transparent_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2892,
       "length": 19,
       "value": "\"retailer_category\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 2936,
       "length": 11,
       "value": "\"image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 3032,
       "length": 16,
       "value": "\"retailer_style\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 3087,
       "length": 27,
       "value": "\"client_original_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 3204,
       "length": 16,
       "value": "\"retailer_color\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 3291,
       "length": 16,
       "value": "\"relative_boost\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 3341,
       "length": 20,
       "value": "\"collage-dimensions\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundleItem.swift",
       "kind": "StringLiteral",
       "offset": 3415,
       "length": 22,
       "value": "\"row_widget_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Repository\/Repository.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Repository\/Repository.swift",
       "kind": "BooleanLiteral",
       "offset": 3063,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Repository\/Repository.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Repository\/Repository.swift",
       "kind": "BooleanLiteral",
       "offset": 3679,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Repository\/Repository.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Repository\/Repository.swift",
       "kind": "BooleanLiteral",
       "offset": 4306,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYouFullPage\/UpsellItems.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/StyledForYouFullPage\/UpsellItems.swift",
       "kind": "StringLiteral",
       "offset": 359,
       "length": 14,
       "value": "\"upsell-items\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 10,
       "value": "\"https:\/\/\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 347,
       "length": 26,
       "value": "\"widget-api.stylitics.com\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 414,
       "length": 39,
       "value": "\"simon-staging-d2odfyb2pa-uk.a.run.app\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 495,
       "length": 26,
       "value": "\"datastream.stylitics.com\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 566,
       "length": 34,
       "value": "\"datastream-staging.stylitics.com\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 54,
       "value": "\"us-central1-tranquil-petal-272922.cloudfunctions.net\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 14,
       "value": "\"\/api\/outfits\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 788,
       "length": 25,
       "value": "\"\/api\/items\/replacements\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 843,
       "length": 18,
       "value": "\"\/api\/engagements\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 889,
       "length": 16,
       "value": "\"\/api\/purchases\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 935,
       "length": 51,
       "value": "\"\/api\/experiences\/\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 985,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1010,
       "length": 14,
       "value": "\"\/api\/crashes\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1060,
       "length": 24,
       "value": "\"\/api\/dynamic-galleries\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1117,
       "length": 21,
       "value": "\"\/api\/styled-for-you\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1173,
       "length": 23,
       "value": "\"\/api\/trending-bundles\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1222,
       "length": 14,
       "value": "\"\/api\/upsells\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1267,
       "length": 19,
       "value": "\"\/api\/shop-the-set\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1324,
       "length": 27,
       "value": "\"\/api\/outfit-landing-page\/\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1384,
       "length": 21,
       "value": "\"\/mobile-sdk-metrics\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1492,
       "length": 34,
       "value": "\"1a7ece0ea7470977d03ed62dcbf72fa1\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1618,
       "length": 17,
       "value": "\"5eQ45@3E6@mRvNx\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1693,
       "length": 17,
       "value": "\"m27Epr8C@@Hhfgj\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1805,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1879,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1960,
       "length": 49,
       "value": "\"Already configured, can't be initialized again.\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2051,
       "length": 32,
       "value": "\"Data SDK isn't configured yet.\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2113,
       "length": 28,
       "value": "\"Unable to form a valid URL\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2185,
       "length": 34,
       "value": "\"Error in formatting request body\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2243,
       "length": 7,
       "value": "\"Error\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2282,
       "length": 15,
       "value": "\"error_message\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2333,
       "length": 12,
       "value": "\"Api Failed\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2380,
       "length": 11,
       "value": "\"Api Error\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2436,
       "length": 28,
       "value": "\"Client name not configured\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2509,
       "length": 70,
       "value": "\"Tracking cannot be performed as the 'Do Not Track' option is enabled\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2638,
       "length": 6,
       "value": "\"true\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2680,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2720,
       "length": 7,
       "value": "\"en-US\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2756,
       "length": 12,
       "value": "\"request_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2794,
       "length": 9,
       "value": "\"sdk-ios\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2830,
       "length": 10,
       "value": "\"modifier\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2866,
       "length": 9,
       "value": "\"present\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2901,
       "length": 9,
       "value": "\"control\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2972,
       "length": 6,
       "value": "\"UUID\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3019,
       "length": 31,
       "value": "\"stylitics.lastSavedClientName\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3087,
       "length": 28,
       "value": "\"stylitics.fasterDataExpiry\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3150,
       "length": 22,
       "value": "\"stylitics.doNotTrack\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3237,
       "length": 4,
       "value": "\"12\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3285,
       "length": 4,
       "value": "\"40\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 3333,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 3379,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 3423,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 3468,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 3510,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 3552,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3588,
       "length": 6,
       "value": "\"Nike\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3630,
       "length": 15,
       "value": "\"outfit_bundle\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3716,
       "length": 34,
       "value": "\"STYLITICS_CLEAR_DATA_FOR_REQUEST\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3823,
       "length": 24,
       "value": "\"StyliticsDataUrlLogger\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3885,
       "length": 28,
       "value": "\"StyliticsRequestInfoLogger\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3955,
       "length": 27,
       "value": "\"StyliticsStacktraceLogger\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 4022,
       "length": 30,
       "value": "\"StyliticsDeviceDetailsLogger\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
       "offset": 255,
       "length": 16,
       "value": "\"fingerprint_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
       "offset": 336,
       "length": 22,
       "value": "\"amp_account_username\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 664,
+      "offset": 682,
       "length": 13,
       "value": "\"item_number\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 703,
+      "offset": 721,
       "length": 16,
       "value": "\"widget_subtype\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 745,
+      "offset": 763,
       "length": 16,
       "value": "\"widget_version\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 801,
       "length": 12,
       "value": "\"account_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 820,
+      "offset": 838,
       "length": 16,
       "value": "\"amp_account_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 933,
+      "offset": 951,
       "length": 5,
       "value": "\"p.b\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 988,
       "length": 5,
       "value": "\"p.p\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1082,
+      "offset": 1100,
       "length": 10,
       "value": "\"all_tags\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1117,
+      "offset": 1135,
       "length": 15,
       "value": "\"return_object\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1157,
+      "offset": 1175,
       "length": 18,
       "value": "\"with_item_coords\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1201,
+      "offset": 1219,
       "length": 16,
       "value": "\"price_rounding\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1254,
+      "offset": 1272,
       "length": 30,
       "value": "\"price_hide_double_zero_cents\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1394,
+      "offset": 1412,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2766,
+      "offset": 2784,
       "length": 10,
       "value": "\"mini-pdp\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3180,
+      "offset": 3198,
       "length": 18,
       "value": "\"trending-outfits\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/Personalization.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/Personalization.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 15,
       "value": "\"browsed_items\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/Personalization.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/DynamicGallery\/Personalization.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 17,
       "value": "\"purchased_items\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 613,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 1591,
       "length": 20,
       "value": "\"lookbook_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 1650,
       "length": 27,
       "value": "\"primary_stylitics_item_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 1707,
       "length": 17,
       "value": "\"large_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 1760,
       "length": 23,
       "value": "\"transparent_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 1834,
       "length": 16,
       "value": "\"base_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 1875,
       "length": 11,
       "value": "\"image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 1918,
       "length": 19,
       "value": "\"primary_remote_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 1967,
       "length": 17,
       "value": "\"cover_image_url\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2016,
       "length": 18,
       "value": "\"account_username\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2060,
       "length": 12,
       "value": "\"account_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2143,
       "length": 24,
       "value": "\"similar_item_remote_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2195,
       "length": 14,
       "value": "\"anchor_items\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2253,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2295,
       "length": 16,
       "value": "\"relative_boost\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2346,
       "length": 22,
       "value": "\"primary_requested_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2413,
       "length": 12,
       "value": "\"version_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2451,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2492,
       "length": 15,
       "value": "\"impression_id\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2536,
       "length": 16,
       "value": "\"on-model-image\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2595,
       "length": 32,
       "value": "\"widget-api.outfit.sort\/compare\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Models\/Bundle\/OutfitBundle.swift",
       "kind": "StringLiteral",
       "offset": 2658,
       "length": 18,
       "value": "\"image_updated_at\""
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/TrackingDataHandler.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/TrackingDataHandler.swift",
       "kind": "Dictionary",
       "offset": 397,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/hrithikk\/Documents\/Stylitics\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/OutfitBundleTrackingInfo.swift",
+      "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Tracking\/Engagements\/OutfitBundleTrackingInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 485,
       "length": 5,
