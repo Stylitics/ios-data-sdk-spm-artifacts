@@ -1658,6 +1658,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -10342,6 +10349,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -18153,7 +18167,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(currency:orderId:itemInfoList:)",
+            "printedName": "init(currency:orderId:itemInfoList:orderTotal:locale:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18169,18 +18183,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -18195,15 +18200,28 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13StyliticsData14PurchasedItemsV8currency7orderId12itemInfoListACSS_SSSgSayAA0c4ItemI0VGtcfc",
-            "mangledName": "$s13StyliticsData14PurchasedItemsV8currency7orderId12itemInfoListACSS_SSSgSayAA0c4ItemI0VGtcfc",
+            "usr": "s:13StyliticsData14PurchasedItemsV8currency7orderId12itemInfoList0F5Total6localeACSS_SSSayAA0c4ItemI0VGSdSStKcfc",
+            "mangledName": "$s13StyliticsData14PurchasedItemsV8currency7orderId12itemInfoList0F5Total6localeACSS_SSSayAA0c4ItemI0VGSdSStKcfc",
             "moduleName": "StyliticsData",
             "declAttributes": [
               "AccessControl"
             ],
+            "throwing": true,
             "init_kind": "Designated"
           }
         ],
@@ -18240,7 +18258,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(remoteId:itemId:price:)",
+            "printedName": "init(remoteId:itemId:price:quantity:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18297,11 +18315,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_AHSdSgtcfc",
-            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_AHSdSgtcfc",
+            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_AISdSgSiSgtcfc",
+            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_AISdSgSiSgtcfc",
             "moduleName": "StyliticsData",
             "declAttributes": [
               "AccessControl"
@@ -18311,7 +18343,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(remoteId:itemId:price:)",
+            "printedName": "init(remoteId:itemId:price:quantity:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18368,11 +18400,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_AHSiSgtcfc",
-            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_AHSiSgtcfc",
+            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_AISiSgAJtcfc",
+            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_AISiSgAJtcfc",
             "moduleName": "StyliticsData",
             "declAttributes": [
               "AccessControl"
@@ -18382,7 +18428,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(remoteId:itemId:price:)",
+            "printedName": "init(remoteId:itemId:price:quantity:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18439,11 +18485,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_SiSgSdSgtcfc",
-            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05priceACSgSSSg_SiSgSdSgtcfc",
+            "usr": "s:13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_SiSgSdSgAJtcfc",
+            "mangledName": "$s13StyliticsData17PurchasedItemInfoV8remoteId04itemG05price8quantityACSgSSSg_SiSgSdSgAJtcfc",
             "moduleName": "StyliticsData",
             "declAttributes": [
               "AccessControl"
@@ -28916,6 +28976,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ObjectiveCBridgeable",
             "printedName": "_ObjectiveCBridgeable",
             "children": [
@@ -29162,14 +29229,14 @@
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/ExtensionUtility.swift",
       "kind": "StringLiteral",
-      "offset": 6062,
+      "offset": 6063,
       "length": 41,
       "value": "\"com.stylitics.RefreshWidgetNotification\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/ExtensionUtility.swift",
       "kind": "StringLiteral",
-      "offset": 6161,
+      "offset": 6162,
       "length": 36,
       "value": "\"com.stylitics.DeviceMetricsDetails\""
     },
@@ -30653,147 +30720,147 @@
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 664,
+      "offset": 682,
       "length": 13,
       "value": "\"item_number\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 703,
+      "offset": 721,
       "length": 16,
       "value": "\"widget_subtype\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 745,
+      "offset": 763,
       "length": 16,
       "value": "\"widget_version\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 801,
       "length": 12,
       "value": "\"account_id\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 820,
+      "offset": 838,
       "length": 16,
       "value": "\"amp_account_id\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 933,
+      "offset": 951,
       "length": 5,
       "value": "\"p.b\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 988,
       "length": 5,
       "value": "\"p.p\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1082,
+      "offset": 1100,
       "length": 10,
       "value": "\"all_tags\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1117,
+      "offset": 1135,
       "length": 15,
       "value": "\"return_object\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1157,
+      "offset": 1175,
       "length": 18,
       "value": "\"with_item_coords\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1201,
+      "offset": 1219,
       "length": 16,
       "value": "\"price_rounding\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1254,
+      "offset": 1272,
       "length": 30,
       "value": "\"price_hide_double_zero_cents\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1394,
+      "offset": 1412,
       "length": 12,
       "value": "\"session_id\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1442,
+      "offset": 1460,
       "length": 11,
       "value": "\"max_items\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1474,
+      "offset": 1492,
       "length": 11,
       "value": "\"min_items\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1508,
+      "offset": 1526,
       "length": 14,
       "value": "\"max-per-item\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1545,
+      "offset": 1563,
       "length": 14,
       "value": "\"min-per-item\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3496,
+      "offset": 3514,
       "length": 10,
       "value": "\"mini-pdp\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3910,
+      "offset": 3928,
       "length": 18,
       "value": "\"trending-outfits\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4045,
+      "offset": 4063,
       "length": 14,
       "value": "\"by-relevance\""
     },
     {
       "filePath": "\/Users\/jenniferdinh\/Development\/mobile-sdk-ios\/StyliticsData\/StyliticsData\/Utility\/EnumConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4079,
+      "offset": 4097,
       "length": 10,
       "value": "\"by-style\""
     },
