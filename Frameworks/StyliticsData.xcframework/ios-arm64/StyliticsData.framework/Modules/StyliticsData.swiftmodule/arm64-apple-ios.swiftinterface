@@ -64,6 +64,30 @@ extension StyliticsData.CollageDimensions : Swift.Decodable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct Features : StyliticsData.IStyliticsData {
+  public var category: Swift.String?
+  public var coords: StyliticsData.Coords?
+  public var items: [StyliticsData.OutfitBundleItem]?
+}
+extension StyliticsData.Features : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Matches : StyliticsData.IStyliticsData {
+  public let status: Swift.String?
+  public let imageUrl: Swift.String?
+  public var featureGroups: [Swift.String : StyliticsData.Features]?
+  public let accountId: Swift.Int?
+}
+extension StyliticsData.Matches : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ShopTheImage : StyliticsData.IStyliticsData {
+  public var version: Swift.String?
+  public var matches: [Swift.String : StyliticsData.Matches]?
+}
+extension StyliticsData.ShopTheImage : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct ShopTheSetResponse {
   public typealias ResponseType = StyliticsData.ShopTheSet
   public let response: Foundation.URLResponse?
@@ -123,6 +147,9 @@ public struct StyledForYouFullPageResponse : StyliticsData.IStyliticsData {
 }
 public struct EngagementsResponse {
   public var error: (any Swift.Error)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(error: (any Swift.Error)?)
+  #endif
 }
 final public class StyliticsConfig {
   final public let timeoutInSecs: Swift.Double?
@@ -173,6 +200,12 @@ public protocol EngagementDelegate : AnyObject {
   func onItemClick(outfitItem: StyliticsData.OutfitBundleItem, position: Swift.Int)
   func onItemAddToCart(outfitItem: StyliticsData.OutfitBundleItem, position: Swift.Int)
   func onPurchase(purchasedItems: StyliticsData.PurchasedItems)
+}
+public struct ComplementaryResponse {
+  public typealias ResponseType = StyliticsData.Complementary
+  public let response: Foundation.URLResponse?
+  public let data: StyliticsData.ComplementaryResponse.ResponseType?
+  public let error: (any Swift.Error)?
 }
 public struct PurchasesResponse {
   public var error: (any Swift.Error)?
@@ -280,6 +313,23 @@ public enum TrackingApisHost {
   public var host: Swift.String {
     get
   }
+}
+public struct Complementary : StyliticsData.IStyliticsData {
+  public var requestedItems: [Swift.String : StyliticsData.RequestedItem]?
+  public var complementaryItems: [Swift.String : [Swift.String : [StyliticsData.OutfitBundleItem]?]]?
+}
+extension StyliticsData.Complementary : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RequestedItem : StyliticsData.IStyliticsData {
+  public let itemId: Swift.Int?
+  public let remoteId: Swift.String?
+  public let accountId: Swift.Int?
+  public var affiliateLink: Swift.String?
+  public var imageUrl: Swift.String?
+}
+extension StyliticsData.RequestedItem : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct StyledForYouResponse {
   public typealias ResponseType = StyliticsData.StyledForYou
@@ -443,7 +493,7 @@ extension StyliticsData.ReplacementItems : Swift.Decodable {
   public static func trendingBundles(filterInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.TrendingBundlesResponse) -> Swift.Void) throws
   public static func upsells(filterInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.UpsellsResponse) -> Swift.Void) throws
   public static func shopTheSet(filterInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.ShopTheSetResponse) -> Swift.Void) throws
-  public static func outfitLandingPage(outfitId: Swift.Int, filterInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.OutfitLandingPageResponse) -> Swift.Void) throws
+  public static func outfitLandingPage(id: Swift.Int, filterInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.OutfitLandingPageResponse) -> Swift.Void) throws
   public static func configure(config: StyliticsData.StyliticsConfig, engagementDelegate: any StyliticsData.EngagementDelegate) throws
   #if compiler(>=5.3) && $NonescapableTypes
   public static func engagement(trackingInfo: StyliticsData.EngagementsTrackingInfo, response: ((StyliticsData.EngagementsResponse) -> Swift.Void)? = nil)
@@ -459,6 +509,8 @@ extension StyliticsData.ReplacementItems : Swift.Decodable {
   #endif
   public static func doNotTrack(_ doNotTrack: Swift.Bool)
   public static func outfitsCountDisplayedByUxSdk(outfits: StyliticsData.Outfits, outfitTemplate: StyliticsData.OutfitTemplate) -> Swift.Int
+  public static func complementary(optionsInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.ComplementaryResponse) -> Swift.Void) throws
+  public static func shopTheImage(filterInfo: [Swift.String : Swift.String], response: @escaping (StyliticsData.ShopTheImageResponse) -> Swift.Void) throws
   @objc deinit
 }
 public struct OutfitLandingPageResponse {
@@ -535,12 +587,23 @@ public struct OutfitBundleItem {
   public let rowWidgetImageUrl: Swift.String?
   public let id: Swift.Int?
   public var widgetType: StyliticsData.TrackingWidgetType?
+  public let weCategory: Swift.String?
+  public let originalImageUrl: Swift.String?
+  public let hexColor: Swift.String?
+  public let relevance: Swift.Double?
+  public let guided: Swift.Bool?
 }
 extension StyliticsData.OutfitBundleItem : Swift.Decodable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension StyliticsData.OutfitBundleItem {
   public func updateReplacementFromAnchorItem(_ anchorItem: StyliticsData.OutfitBundleItem) -> StyliticsData.OutfitBundleItem
+}
+public struct ShopTheImageResponse {
+  public typealias ResponseType = StyliticsData.ShopTheImage
+  public let response: Foundation.URLResponse?
+  public let data: StyliticsData.ShopTheImageResponse.ResponseType?
+  public let error: (any Swift.Error)?
 }
 public struct UpsellItems : StyliticsData.IStyliticsData {
   public var upsells: [StyliticsData.OutfitBundleItem]?
@@ -570,8 +633,12 @@ public enum EngagementInfo {
   case trendingBundleItem(outfitBundleItem: StyliticsData.OutfitBundleItem, position: Swift.Int)
   case upsellsItemData(outfitBundleItem: StyliticsData.OutfitBundleItem, position: Swift.Int)
   case styledForYouFullPageData(requestId: Swift.String, position: Swift.Int)
+  case shopTheImageItem(outfitBundleItem: StyliticsData.OutfitBundleItem, position: Swift.Int)
 }
 public struct EngagementsTrackingInfo {
+  public let event: StyliticsData.Event
+  public let engagementInfo: StyliticsData.EngagementInfo
+  public let extraInfo: [Swift.String : Any]?
   #if compiler(>=5.3) && $NonescapableTypes
   public init(event: StyliticsData.Event, engagementInfo: StyliticsData.EngagementInfo, extraInfo: [Swift.String : Any]? = nil)
   #endif
